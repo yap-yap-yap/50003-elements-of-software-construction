@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
 @RunWith(Parameterized.class)
 public class QuickSortTest {
     
-    int[] array;
-    int[] expected_array;
+    private int[] array;
+    private int[] expected_array;
 
     public QuickSortTest(int[] array, int[] expected_array){
         this.array = array;
