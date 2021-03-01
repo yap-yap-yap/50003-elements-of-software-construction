@@ -24,9 +24,9 @@ public class DiskTestPathCoverage {
     @Parameters
     public static Collection<Object[]> parameters(){
         return Arrays.asList(new Object[][]{
-            {2, 0},
+            {2, -20},
             {2, 17},
-            {1010, 0},
+            {1010, -20},
             {1010, 17}
         });
     }

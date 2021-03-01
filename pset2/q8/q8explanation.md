@@ -2,8 +2,8 @@ There are 2 statements that the method will always pass through (the ones concer
 
 The test cases are:
 ```
-{2, 0},
+{2, -20},
 {2, 17},
-{1010, 0},
+{1010, -20},
 {1010, 17}
 ```

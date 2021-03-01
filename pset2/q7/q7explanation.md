@@ -3,5 +3,5 @@ A value of ``y < 1`` is sufficient to cover all statements that has ``y`` in it.
 The test cases are: 
 ```
 {2, 0},
-{1010, 0}
+{1010, -20}
 ```

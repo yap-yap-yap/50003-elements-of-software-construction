@@ -4,3 +4,5 @@ The test case is:
 ```
 {1010, -20}
 ```
+
+does q7 and q8 test cases need to change to account for this bug?

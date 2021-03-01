@@ -25,7 +25,7 @@ public class DiskTestStatementCoverage {
     public static Collection<Object[]> parameters(){
         return Arrays.asList(new Object[][]{
             {2, 0},
-            {1010, 0}
+            {1010, -20}
         });
     }
 
