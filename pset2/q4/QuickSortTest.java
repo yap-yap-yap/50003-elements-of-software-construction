@@ -33,7 +33,7 @@ public class QuickSortTest {
     } 
 
     @Test
-    public void runTest(){
+    public void runQuickSortTest(){
         QuickSort quickSort = new QuickSort();
         quickSort.sort(array);
         assertArrayEquals(array, expected_array); //doesn't this just take the array from the test object? the sorted array is in the QuickSort object, and it can't be accessed. idk seems to work tho
