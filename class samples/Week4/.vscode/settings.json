@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\coding\\junit\\hamcrest-core-1.3.jar",
+        "c:\\coding\\junit\\junit-4.13.2.jar",
+        "c:\\coding\\selenium\\selenium-server-standalone-3.141.59.jar"
+    ]
+}
