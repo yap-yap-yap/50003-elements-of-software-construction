@@ -3,10 +3,12 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class FindMaxTest {
+    
+    //will fail
     @Test
     public void testMaxFail(){
         int x = FindMax.max(new int[]{0,1,2});
-        assertFalse(x == 2);
+        assertTrue(x == 2);
     }
 
     //2 different ways for this one. either just try/catch but the try part will fail if the exception isn't thrown, or just denote the expected thrown exception
@@ -18,6 +20,7 @@ public class FindMaxTest {
             fail("ArrayIndexOutOfBoundsException was not thrown");
         }
         catch(Exception ArrayIndexOutOfBoundsException){
+            fail("ArrayIndexOutOfBoundsException was thrown");
         }
 
         /*int x = FindMax.max(new int[]{});
