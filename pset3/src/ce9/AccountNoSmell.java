@@ -54,9 +54,9 @@ public class AccountNoSmell {
   public void CreditTransaction(int amount) {
     balance = balance + amount;
 
-    ListOfAllTransactions.add(new Transaction("crebit", amount));
+    ListOfAllTransactions.add(new Transaction("credit", amount));
 
-    lastCrebitTime = getTransactionTime();
+    lastCreditTime = getTransactionTime();
 
   }
 
