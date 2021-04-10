@@ -1,0 +1,1 @@
+Each fork has its own reentrant lock. Try-lock is performed whenever the pickup() or putdown() methods are called. Thus, there is no risk of deadlock due to the fork locks being held by separate philosophers, since the try lock only attempts to acquire the lock for 1 second. 
