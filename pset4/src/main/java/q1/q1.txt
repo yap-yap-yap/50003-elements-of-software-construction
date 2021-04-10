@@ -1,0 +1,5 @@
+1. We have a server that counts the number of people in a given image. We have a request queue where the server would read the requests for people counting from. Multithreading allows for parsing of requests and people counting to take place concurrently.
+
+2. Multithreading could be used to have multiple threads working on counting images at the same time, allowing for more efficient processing of requests.
+
+3. Furthermore, multiple server shards can be used to have multiple request queues that the cameras that take those images would send to, allowing for further parallelisation of the system.
