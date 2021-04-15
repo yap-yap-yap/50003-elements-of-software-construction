@@ -79,7 +79,7 @@ class Searcher extends Thread {
             //System.out.println(i);
             if(data[i] == "F"){
                 latch.countDown();
-                System.out.println("latch count down");
+                System.out.println("F found at index " + i + ". latch count down...");
             }
             if(latch.getCount() == 0){
                 break;
