@@ -7,19 +7,19 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 
 //hint 2: we must ensure this class to be thread-safe. why? and how?
-public class MyCyclicBarrier {
+public class MyCyclicBarrierAnswer {
     private final int parties;
     private int count = 0;
     private Runnable torun;//hint 3: when should we call this runable task?
     public ReentrantLock lock = new ReentrantLock();
 
-    public MyCyclicBarrier(int count, Runnable torun) {
+    public MyCyclicBarrierAnswer(int count, Runnable torun) {
         this.count = count;
         this.torun = torun;
         parties = count;
     }
 
-    public MyCyclicBarrier(int count) {
+    public MyCyclicBarrierAnswer(int count) {
         this.count = count;
         parties = count;
     }

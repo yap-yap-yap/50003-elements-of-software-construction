@@ -1,14 +1,15 @@
 package q1;
 
+import java.util.concurrent.CyclicBarrier;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class MyCyclicBarrierExample {
+public class CyclicBarrierExample {
 
     private static class Task implements Runnable {
-        private MyCyclicBarrierAnswer barrier;
+        private CyclicBarrier barrier;
 
-        public Task(MyCyclicBarrierAnswer barrier) {
+        public Task(CyclicBarrier barrier) {
             this.barrier = barrier;
         }
 
@@ -20,14 +21,14 @@ public class MyCyclicBarrierExample {
                     System.out.println(Thread.currentThread().getName() + " has crossed the barrier");
                 }
             } catch (Exception ex) {
-                Logger.getLogger(MyCyclicBarrierExample.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(CyclicBarrierExample.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
 
     public static void main(String args[]) {
         //A CyclicBarrier supports an optional Runnable command
-        final MyCyclicBarrierAnswer cb = new MyCyclicBarrierAnswer(3, new Runnable() {
+        final CyclicBarrier cb = new CyclicBarrier(3, new Runnable() {
             public void run() {
                 //This task will be executed once all thread reaches barrier
                 System.out.println("All parties are arrived at barrier, lets play");
